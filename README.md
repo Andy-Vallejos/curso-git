@@ -16,3 +16,35 @@ En GitHub, un repositorio es un almacenamiento virtual para proyectos de código
 ### Que es un commit:
 
 En Git, un "commit" (o confirmación) es una instantánea del estado de un proyecto en un momento específico. Es como guardar un punto de control del desarrollo, registrando exactamente cómo eran los archivos y directorios en ese instante.
+
+## CLASE 2
+
+### Git Status
+
+El comando `git status ` sirve para mostrar el estado actual del directorio de trabajo y el área de staging en un repositorio Git.
+
+### Estados:
+
+#### Modified:
+
+El archivo ha sido creado, modificado o eliminado y no se han confirmado los cambios.
+
+#### Staged:
+
+El archivo ha sido marcado como preparado para ser confirmado en el repositorio local.
+
+#### Commited:
+
+El archivo ha sido grabado en el directorio local (commit).
+
+##### Commit:
+
+Un commit es como una fotografia del estado de todos los archivos en un determinado punto, va con una firma de autor, fecha, localizacion y otra informacion util.
+
+## Git Log:
+
+El comando `git log` muestra el historial de commits en un repositorio, permitiendo visualizar y filtrar los cambios realizados en el proyecto.
+
+## HEAD:
+
+HEAD es un puntero que indica la última confirmación que has extraído en la rama actual, o en la que estás trabajando.
