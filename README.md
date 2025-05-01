@@ -33,9 +33,17 @@ El archivo ha sido creado, modificado o eliminado y no se han confirmado los cam
 
 El archivo ha sido marcado como preparado para ser confirmado en el repositorio local.
 
+##### Git Add:
+
+Con el comando `git add <archivo> ` se cambia el estado de modified a staged de los archivos que se deseen.
+
 #### Commited:
 
 El archivo ha sido grabado en el directorio local (commit).
+
+##### Git Commit:
+
+Con el comando `git commit -m 'mensaje'` se cambia el estado de staged a commited esto hace una fotografia de todos los cambios confirmados.
 
 ##### Commit:
 
