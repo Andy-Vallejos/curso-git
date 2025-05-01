@@ -19,17 +19,17 @@ En Git, un "commit" (o confirmación) es una instantánea del estado de un proye
 
 ## CLASE 2
 
-### Git Status
+## Git Status
 
 El comando `git status ` sirve para mostrar el estado actual del directorio de trabajo y el área de staging en un repositorio Git.
 
-### Estados:
+## Estados:
 
-#### Modified:
+### Modified:
 
 El archivo ha sido creado, modificado o eliminado y no se han confirmado los cambios.
 
-#### Staged:
+### Staged:
 
 El archivo ha sido marcado como preparado para ser confirmado en el repositorio local.
 
@@ -37,15 +37,15 @@ El archivo ha sido marcado como preparado para ser confirmado en el repositorio 
 
 Con el comando `git add <archivo> ` se cambia el estado de modified a staged de los archivos que se deseen.
 
-#### Commited:
+### Commited:
 
 El archivo ha sido grabado en el directorio local (commit).
 
-##### Git Commit:
+#### Git Commit:
 
 Con el comando `git commit -m 'mensaje'` se cambia el estado de staged a commited esto hace una fotografia de todos los cambios confirmados.
 
-##### Commit:
+#### Commit:
 
 Un commit es como una fotografia del estado de todos los archivos en un determinado punto, va con una firma de autor, fecha, localizacion y otra informacion util.
 
