@@ -25,4 +25,4 @@ En Git, una rama (branch) es una bifurcación del código que permite a los desa
 
 ## Git Switch:
 
-El comando `git switch -c <nombre>` crea una nueva rama y te dirige automaticamente a la nueva rama. Por otra parte el comando `git switch <rama>` cambia de la rama en la que estas a una nueva.
+El comando `git switch -c <nombre>` crea una nueva rama y te dirige automaticamente a la nueva rama. Por otra parte el comando `git switch <rama>` cambia de la rama en la que estas a la rama deseada.
