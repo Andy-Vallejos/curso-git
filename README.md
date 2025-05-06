@@ -89,3 +89,50 @@ Decidir entre:
 - Nos quedamos con los cambios de la rama main.
 - Nos quedamos con los cambios de la rama change.
 - Modificar los cambios para hacer una fusion personalizada.
+
+## CLASE 4
+
+### Git y GitHub son lo mismo?:
+
+- Git es un control de versiones.
+- GitHub es un servicio de alojamiento de codigo fuente basado en el sistema de control de versiones
+  (hay muchos igual a github).
+
+  ### Git remote:
+
+  El comando `git remote add origin <enlace>` enlaza tu repositorio remoto con el repositorio local.
+  ![alt text](image-3.png)
+  Las llaves ssh evita que alguien se haga pasar por ti.
+
+  ### Git clone:
+
+  Clona un repositorio remoto en tu repositorio local.
+  `git clone <enlace>`
+
+  ### Git push:
+
+  `git push` nos sirve para empujar cualquier cambio o modificacion del repositorio local al repositorio remoto.
+  `git push -u`-> Enlaza la rama local con la rama remota.
+  `git push -f` ->
+
+  ### Git pull:
+
+  `git pull` sirve para jalar los cambios o descargarlos desde el repositorio remoto al local.
+
+  #### git pull -f:
+
+  Usar git push -f (force push) se considera generalmente una mala práctica por varias razones importantes, principalmente porque reescribe el historial del repositorio remoto, lo que puede causar problemas significativos para otros colaboradores. Piénsalo así: es como reescribir un capítulo de un libro compartido después de que otros ya lo han leído y basado su trabajo en él.
+
+  #### EXPERIMENTOS
+
+  Traernos cambios de otras ramas a la actual: Sí, `git pull` se utiliza para traer cambios de una rama remota a tu rama local actual.
+  Traernos los cambios de varias ramas a una sola: No directamente con un solo comando `git pull`. Tendrías que hacer un git checkout a la rama destino y luego hacer git merge de las otras ramas o usar otras estrategias como git cherry-pick.
+  Quiero traerme cambios solo con `git pull`: `git pull` es el comando principal para traer cambios remotos a tu rama local.
+  ¿Se pueden producir conflictos con `git pull`?: Sí, se pueden producir conflictos si hay cambios en el repositorio remoto que chocan con cambios locales en los mismos archivos. Git te avisará de estos conflictos para que los resuelvas manualmente.
+
+  ### Que es una pull request?:
+
+  Una PR es una peticion de cambios que se envia al repositorio original.
+
+  ![alt text](image-4.png)
+  ![alt text](image-5.png)
