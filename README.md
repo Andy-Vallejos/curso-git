@@ -71,8 +71,8 @@ HEAD es un puntero que indica la última confirmación que has extraído en la r
 
 Empleamos el comando `git merge <rama solicitada>` para incorporar los cambios de una rama a la rama en la que nos encontramos en ese momento.
 Se puede hacer multiples fusiones de ramas.
-![alt text](image-1.png)
-![alt text](image.png)
+![alt text](images/image-1.png)
+![alt text](images/image.png)
 
 ### Eliminar ramas:
 
@@ -83,7 +83,7 @@ Se deben eliminar las ramas para tener un entorno de trabajo limpio y por buena 
 
 ### Conflictos en git:
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 Decidir entre:
 
 - Nos quedamos con los cambios de la rama main.
@@ -101,7 +101,7 @@ Decidir entre:
   ### Git remote:
 
   El comando `git remote add origin <enlace>` enlaza tu repositorio remoto con el repositorio local.
-  ![alt text](image-3.png)
+  ![alt text](images/image-3.png)
   Las llaves ssh evita que alguien se haga pasar por ti.
 
   ### Git clone:
@@ -134,8 +134,8 @@ Decidir entre:
 
   Una PR es una peticion de cambios que se envia al repositorio original.
 
-  ![alt text](image-4.png)
-  ![alt text](image-5.png)
+  ![alt text](images/image-4.png)
+  ![alt text](images/image-5.png)
 
   ## CLASE 5
 
@@ -145,7 +145,7 @@ Decidir entre:
 
   ### Git Flow:
 
-  ![alt text](image-6.png)
+  ![alt text](images/image-6.png)
 
   #### Main:
 
@@ -169,18 +169,18 @@ Decidir entre:
 
   ### GitHub Flow:
 
-  ![alt text](image-7.png)
+  ![alt text](images/image-7.png)
   Rama y cualquier otra rama que quiera ser integrada por medio de una Pull Request
 
   ### Trunk Based Development:
 
-  ![alt text](image-8.png)
+  ![alt text](images/image-8.png)
 
   Solo la rama main y ramas auxiliares efimeras que quiera ser integrada por medio de una Pull Request.
 
   ### Ship / Show / Ask
 
-  ![alt text](image-9.png)
+  ![alt text](images/image-9.png)
 
   #### Ship:
 
@@ -236,8 +236,8 @@ EJEMPLO: `feat: add new search feature`
 
 ### Tipos de prefijos:
 
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 ### Escribir buenos nombres de rama:
 
-![alt text](image-11.png)
+![alt text](images/image-11.png)
