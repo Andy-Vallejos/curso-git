@@ -264,10 +264,88 @@ Posee 2 opciones:
 ### Git revert
 
 Revierte los cambios que un commit introdujo, y crea un nuevo commit con los cambios revertidos.
-_NO BORRA COMMITS_
-_PUEDE OCURRIR CONFLICTOS_
+
+- _NO BORRA COMMITS_
+- _PUEDE OCURRIR CONFLICTOS_
 
 ### Git checkout
 
 Nos permite recuperar codigo especifico de commits.
 `git checkout <id_commit>`
+
+## CLASE 8
+
+### Que es un hook?
+
+- Es la posibilidad de ejecutar una accion o script cada vez que ocurre un evento determinado en git.
+- Hooks del lado del cliente.
+- Hooks del lado del servidor.
+
+### Hooks del lado del cliente
+
+Solo afectan al repositorio local que los contiene.
+
+- **pre-commit**
+
+  - Podrías comprobar si se está intentando hacer un commit de demasiados archivos.
+  - Puede ser un buen sitio para ejecutar el linter sobre los archivos que han sido modificados.
+
+- **prepare-commit-msg**
+
+  - Para modificar el mensaje del commit o añadir cualquier información extra.
+
+- **commit-msg**
+
+  - Es el sitio perfecto para hacer todas las comprobaciones pertinentes al mensaje.
+
+- **post-commit**
+
+  - Su uso principal es la de notificar por Slack.
+
+- **pre-push**
+
+  - Para ejecutar una batería de tests.
+
+- **post-checkout y post-merge**
+
+  - Permite limpiar el directorio de trabajo, tras realizar un checkout, o el de limpiar las ramas que ya no se usan tras realizar un merge.
+
+  ### Hooks del lado del servidor
+
+  Es interesante conocerlos ya que páginas como GitHub o GitLab los usan intensivamente a la hora de construir.
+
+- **pre-receive**
+
+  - Para comprobar que los commits que se quieren guardar están bien formados.
+  - Verificar que el usuario que intenta grabar los commits tiene los permisos necesarios para hacerlo.
+
+- **update**
+
+  - Puedes evitar de una forma granular cada actualización.
+
+- **post-receive**
+  - Enviar un correo a todos los usuarios del repositorio que se han grabado nuevos cambios en el repositorio remoto.
+  - Reflejar en una UI las nuevas referencias, ramas o commits disponibles.
+
+### Creando mi primer hook
+
+Para crear un propio hook sólo tienes que crear un archivo `nombre-del-hook` en la carpeta `.git/hooks` y en él poner el código que quieras que se ejecute.
+
+Puedes usar todo tipo de intérpretes de lenguaje de programación como bash, node, python, perl, etc.
+
+### Que es un alias?
+
+`git co`-> `git commit`
+`git st`-> `git status`
+
+### Crear mi primer alias
+
+`git config --global alias.name "comando-git"`
+
+![alt text](image13.png)
+
+### Eliminar un alias
+
+`git config --global --unset alias.name`
+
+![alt text](image12.png)
