@@ -241,3 +241,33 @@ EJEMPLO: `feat: add new search feature`
 ### Escribir buenos nombres de rama:
 
 ![alt text](images/image-11.png)
+
+## CLASE 7
+
+### En que casos deshacemos cambios:
+
+- Dejo de funcionar el proyecto.
+- Queremos recuperar una parte del codigo que eliminamos.
+- Queremos eliminar archivos que eliminamos.
+
+### Comandos destructivos y no destructivos:
+
+Los comandos destructivos afectan el historial de commits realizado, sin embargo los comando no destructivos trabajan en base al historial sin afectarlo.
+
+### Git reset
+
+Posee 2 opciones:
+
+- _soft:_ Mantiene los cambios que ocurrieron antes de hacer commit desde donde apuntaba.
+- _hard:_ Descarta los cambios.
+
+### Git revert
+
+Revierte los cambios que un commit introdujo, y crea un nuevo commit con los cambios revertidos.
+_NO BORRA COMMITS_
+_PUEDE OCURRIR CONFLICTOS_
+
+### Git checkout
+
+Nos permite recuperar codigo especifico de commits.
+`git checkout <id_commit>`
