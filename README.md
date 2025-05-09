@@ -136,3 +136,74 @@ Decidir entre:
 
   ![alt text](image-4.png)
   ![alt text](image-5.png)
+
+  ## CLASE 5
+
+  ### Que es un GitFlow?:
+
+  Es la menera en la que un equipo de desarrollo va a utilizar git para poder trabajar de manera colaborativa.
+
+  ### Git Flow:
+
+  ![alt text](image-6.png)
+
+  #### Main:
+
+  Contener el codigo de produccion.
+
+  #### Develop:
+
+  Codigo de pre-produccion que todavia tienen que ser probadas y validadas.
+
+  #### Feature:
+
+  Caracteristicas nuevas para el proyecto.
+
+  #### Release:
+
+  Cambios de ultimo momento
+
+  #### Hotfix:
+
+  Parches para arreglar bugs pequeños
+
+  ### GitHub Flow:
+
+  ![alt text](image-7.png)
+  Rama y cualquier otra rama que quiera ser integrada por medio de una Pull Request
+
+  ### Trunk Based Development:
+
+  ![alt text](image-8.png)
+
+  Solo la rama main y ramas auxiliares efimeras que quiera ser integrada por medio de una Pull Request.
+
+  ### Ship / Show / Ask
+
+  ![alt text](image-9.png)
+
+  #### Ship:
+
+  Se fuciona en la rama principal sin revision.
+
+  #### Show:
+
+  Abre una peticion de cambios para que sean revisados por CI pero se fusiona inmediatamente.
+
+  #### Ask:
+
+  Abre una PR para discutir los cambios antes de fusionarlos.
+
+### Las reglas de Ship / Show / Ask
+
+- Tenemos un buen sistema de CI/CD.
+
+- Confiamos en el equipo y existen buenas prácticas de desarrollo. Pair programming, mob programming, seniority… y, sobre todo, existe responsabilidad. La persona se responsabiliza de decidir la categoría de su cambio.
+
+- Un gran poder, poder hacer merge de tus propias Pull Request, conlleva una gran responsabilidad (no romper producción).
+
+- Las revisiones de código no son requerimientos.
+
+- Las ramas son lo más pequeñas posibles, tienen un tiempo de vida corto y siempre salen directamente desde la rama principal.
+
+- El equipo ha sabido lidiar con el ego individual, las personas confían en el resto del equipo y las pruebas automáticas pasan.
