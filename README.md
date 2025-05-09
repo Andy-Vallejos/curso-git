@@ -198,12 +198,46 @@ Decidir entre:
 
 - Tenemos un buen sistema de CI/CD.
 
-- Confiamos en el equipo y existen buenas prácticas de desarrollo. Pair programming, mob programming, seniority… y, sobre todo, existe responsabilidad. La persona se responsabiliza de decidir la categoría de su cambio.
-
-- Un gran poder, poder hacer merge de tus propias Pull Request, conlleva una gran responsabilidad (no romper producción).
+- Confiamos en el equipo y existen buenas prácticas de desarrollo. Pair programming, mob programming, seniority… y, sobre todo, existe responsabilidad. La persona se responsabiliza de decidir la categoría de su cambio. Un gran poder, poder hacer merge de tus propias Pull Request, conlleva una gran responsabilidad (no romper producción).
 
 - Las revisiones de código no son requerimientos.
 
 - Las ramas son lo más pequeñas posibles, tienen un tiempo de vida corto y siempre salen directamente desde la rama principal.
 
 - El equipo ha sabido lidiar con el ego individual, las personas confían en el resto del equipo y las pruebas automáticas pasan.
+
+## CLASE 6
+
+### Para que sirven las buenas practicas?:
+
+- Es un estandar manejado en la mayoria de equipos de desarrollo.
+- Resolver conflictos o problemas durante el desarrollo es mas facil.
+- Tu historial de commits es mas legible.
+
+### Cada cuanto deberia hacer un commit?:
+
+**A menudo.**
+
+### Escribir buenos commits:
+
+- Usar el verbo imperativo (Add, Change, Fix, Remove)
+
+- No uses punto final ni puntos suspensivos en tus mensajes (a lo más usa la coma)
+
+- Usa como máximo 50 caracteres para tu mensaje de commit
+
+- Añade todo el contexto que se necesario en el cuerpo del commit (con reglas de puntuación)
+
+- Considera usar utilidades para hacer commit
+
+- Usa un prefijo para tus commits para hacerlos más semánticos
+
+EJEMPLO: `feat: add new search feature`
+
+### Tipos de prefijos:
+
+![alt text](image-10.png)
+
+### Escribir buenos nombres de rama:
+
+![alt text](image-11.png)
