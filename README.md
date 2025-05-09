@@ -342,10 +342,10 @@ Puedes usar todo tipo de intérpretes de lenguaje de programación como bash, no
 
 `git config --global alias.name "comando-git"`
 
-![alt text](image13.png)
+![alt text](images/image13.png)
 
 ### Eliminar un alias
 
 `git config --global --unset alias.name`
 
-![alt text](image12.png)
+![alt text](images/image12.png)
